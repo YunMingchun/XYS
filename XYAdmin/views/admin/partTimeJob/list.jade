@@ -1,7 +1,34 @@
 //
    Created by ymc on 11/18/15.
 
-div.list-body(ng-controller='listCtrl')
+div.list-body
    div.ops
       a.btn.add-btn(ng-click='addItem()') Add
    div.list
+      table
+         tr
+            th No.
+            th 发布机构
+            th 工作地点
+            th 结算方式
+            th 招聘人数
+            th 经验要求
+            th 学历
+            th 职位描述
+            th 商家承诺
+            th 详细地址
+            th OPs
+         tr(ng-repeat='item in items track by $index')
+            td(ng-bind='$index')
+            td(ng-bind='item.publisher')
+            td(ng-bind='item.area')
+            td(ng-bind='item.payment')
+            td(ng-bind='item.count')
+            td(ng-bind='item.experience')
+            td(ng-bind='item.degree')
+            td(ng-bind='item.detail')
+            td(ng-bind='item.promise')
+            td(ng-bind='item.address')
+            td
+               a.btn(ng-click='editItem(item._id)') edit
+               a.btn(ng-click='deleteItem(item._id)') delete
