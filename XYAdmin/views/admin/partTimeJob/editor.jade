@@ -1,0 +1,35 @@
+//
+   Created by ymc on 11/18/15.
+
+block body
+   div.editor-body
+      div.form-group
+         label.form-inline 发布机构
+         input.form-control(ng-model='publisher')
+      div.form-group
+         label.form-inline 工作地点
+         input.form-control(ng-model='area')
+      div.form-group
+         label.form-inline 结算方式
+         input.form-control(ng-model='payment')
+      div.form-group
+         label.form-inline 招聘人数
+         input.form-control(ng-model='count')
+      div.form-group
+         label.form-inline 经验要求
+         input.form-control(ng-model='experience')
+      div.form-group
+         label.form-inline 学历
+         input.form-control(ng-model='degree')
+      div.form-group
+         label.form-block 职位描述
+         textarea.form-control(ng-model='detail')
+      div.form-group
+         label.form-block 商家承诺
+         textarea.form-control(ng-model='promise')
+      div.form-group
+         label.form-block 详细地址
+         textarea.form-control(ng-model='address')
+   div.ops
+      a.btn.submit-btn(ng-click='submit()') 提交
+      a.btn.cancel-btn(ng-click='cancel()') 取消

@@ -1,0 +1,14 @@
+//
+   Created by ymc on 11/18/15.
+
+extends ../template/template.jade
+
+block links
+   link(rel='stylesheet', href='/css/admin/partTimeJob.css')
+
+block scripts
+   script(type='text/javascript', src='/js/controller/admin/partTimeJob.js')
+
+block body
+   div.frame(ng-controller='frameCtrl')
+      div.ng-view

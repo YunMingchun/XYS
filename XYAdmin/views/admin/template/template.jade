@@ -1,0 +1,21 @@
+//
+   Created by ymc on 11/18/15.
+
+doctype html
+html(lang="en" ng-app="myApp")
+   head
+      base(href='/')
+      title= title
+      link(rel='stylesheet', href='/css/admin/global.css')
+      block links
+
+   body
+      block header
+      block menu
+      block body
+      block footer
+
+   script(type='text/javascript', src='/js/third/angular.js')
+   script(type='text/javascript', src='/js/third/angular-route.js')
+   script(type='text/javascript', src='/js/service/admin/service.js')
+   block scripts
